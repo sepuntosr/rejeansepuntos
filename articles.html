@@ -1,0 +1,147 @@
+<html>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: helvetica;
+}
+h3{
+	color: white;
+}
+.titlevid{
+	width: 100%;
+	color: black;
+	bottom: 50;
+	transform: translateX(-57%);
+	position: absolute;
+	left: 88%;
+	top: 50%;
+}
+.titlevid h1{
+	font-size: 75px;
+}
+.layerart{
+	background: transparent;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top:  0%;
+	left: 0%;
+	transition: 0.5s;
+}
+.layerart:hover{
+	background: rgba(225,225,225,0.5);
+}
+.layerart h2{
+	width: 100%;
+	color: black;
+	font-size: 20px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layerart:hover h2{
+	bottom: 65%;
+	opacity: 1;
+}
+.layerart p{
+	width: 100%;
+	font-weight: 500;
+	color: black;
+	font-size: 12px;
+	bottom: 50;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.6s;
+
+}
+.layerart:hover p{
+	bottom: 35%;
+	opacity: 1;
+}
+
+</style>
+
+<head>
+	<title> Video Lectures </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel = "icon" href = "images/logo.png">
+</head>
+
+<body>
+
+	<section class="abtusheader">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html"> Home </a></li>
+					<li><a href="contents.html"> Contents </a></li>
+					<li><a href="aboutus.html"> About </a></li>
+					<li><a href="contactus.html"> Contacts </a></li>
+				</ul>
+			</div>
+			
+			<div class="titlevid">
+				<h1> Recent Articles </h1>
+			</div>
+		</nav>
+	</section>
+	
+	<section class="contents">
+		<h3> Please click to see the full article. </h3>
+		<div class="row">
+			<div class="con">
+				<img src="images/art1.jpg" height="100%">
+				<div class="layerart">
+					<a href="https://www.sciencedaily.com/releases/2021/11/211129122755.htm" target="_blank">
+					<h2> "Sun is likely an unaccounted <br> source of the Earth’s water" <br> Curtin University (August 29, 2021) </h2> 
+					<p> According to the study of Curtin University (2021). It has always been a question
+					where the water of the earth came from and according to this study it most likely because of the 
+					sun. Stated on this study, the solar wind created the water on the surface of tiny dust grains. 
+					</p>
+					</a>
+				</div>
+			</div>
+			
+			<div class="con">
+				<img src="images/art2.jpg">
+				<div class="layerart">
+					<a href="https://www.nasa.gov/feature/goddard/2021/nasa-returns-hubble-to-full-science-operations" target="_blank"> 
+					<h2> "NASA Returns Hubble to Full <br> Science Operations" <br> NASA (December 7, 2021)  </h2> 
+					<p> Hubble is a Telescope project of International  Cooperation between NASA and ESA.
+					Hubble Telescope has been operating  <br>for 31 years. Since Hubble is operating again this will 
+					give NASA more foundings and discoveries especially that there are 2 observatories in space.
+					</p>
+					</a>
+				</div>
+			</div>
+			
+			<div class="con">
+				<img src="images/lec3.jpg" height="100%">
+				<div class="layerart">
+					<a href="https://www.nasa.gov/press-release/nasa-s-laser-communications-tech-science-experiment-safely-in-space-0" target="_blank"> 
+					<h2> "NASA’s Laser Communications <br>  Tech, Science Experiment Safely in Space" <br> NASA (December 8, 2021) </h2> 
+					<p> 
+					Laser Communication Relay Demonstration is now on space. This can enable data rates 10 to 100 times greater
+					With this launch this introduces an exciting new technology for space missions and it'll expand and discover
+					more of the horizons in the space which can give more space missions.
+					</p>
+					</a>
+				</div>
+			</div>
+						
+		</div>
+		
+			<a href="contents.html" class="button"> Back </a>
+
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<html>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	min-height:100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	font-family: helvetica;
+	
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #8F00FF;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 98%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	margin: 44px 0 20px;
+	font-size:65px;
+}
+.text-box p{
+	margin: 44px 0 20px;
+	font size: 12px;
+	color: #fff;
+}
+.button{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 45px;
+}
+.button:hover{
+	border: 1px solid #8F00FF;
+	background: #8F00FF;
+	transition: 1s;
+}
+
+/*----- Goals ------*/
+
+.info{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	font-family: helvetica;
+	background-color: black;
+	min-height:80%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+h1{
+	color: #fff;
+	font-size:36px;
+	font-weight: 600;
+}
+p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.ss{
+	flex-basis: 31%;
+	background: #c0c0c0 ;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.ss:hover{
+	box-shadow: 0 0 20px 0px rgba(255,255,255);
+}
+
+.header1{
+	min-height:30%;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/startbg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+/*----- The planets in the Solar System ------*/
+
+.solar{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	font-family: helvetica;
+	background-color: black;
+	min-height:100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.solar h1{
+	color: #FFF;
+	font-size: 75px;
+}
+.solarsystem{
+	flex-basis:30%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.solarsystem img{
+	width: 100%;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top:  0%;
+	left: 0%;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(225,225,225,0.5);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: black;
+	font-size: 40px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 55%;
+	opacity: 1;
+}
+.layer p{
+	width: 100%;
+	font-weight: 500;
+	color: black;
+	font-size: 13px;
+	bottom: 50;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.6s;
+
+}
+.layer:hover p{
+	bottom: 35%;
+	opacity: 1;
+}
+.contents{
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	font-family: helvetica;
+	background-color: black;
+	min-height:150%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.con{
+	flex-basis:30%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.con img{
+	width: 100%;
+}
+.layer1{
+	background: transparent;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top:  0%;
+	left: 0%;
+	transition: 0.5s;
+}
+.layer1:hover{
+	background: rgba(225,225,225,0.5);
+}
+.layer1 h2{
+	width: 100%;
+	color: black;
+	font-size: 30px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer1:hover h2{
+	bottom: 42%;
+	opacity: 1;
+}
+
+
+
+/*----- About Us ------*/
+.abtusheader{
+	min-height:70%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/startbg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.title{
+	width: 100%;
+	color: black;
+	bottom: 50;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 88%;
+	top: 50%;
+}
+.title h1{
+	font-size: 75px;
+}
+.header2{
+	background-position: center;
+	background-size: cover;
+	background-color: black;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	padding-top: 350px;
+	font-family: helvetica;
+	min-height:20%;
+	width: 100%;
+}
+.header2 h1{
+	padding-top: 150px;
+	color: #FFF;
+	font-size: 75px;
+}
+.text-box1{
+	width: 70%;
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box1 h1{
+	font-size:45px;
+	color: #fff;
+}
+.text-box1 p{
+	font size: 14px;
+	color: #fff;
+}
+.imgabtus{
+	padding-top: 3;
+	text-align: center;
+	background-color: black;
+	font-family: helvetica;
+	min-height: 100%;
+}
+.abtusimg{
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: center;
+	background: gray;
+	padding: 25px;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.5s;
+
+}
+.abtusimg img{
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+.abtusimg h3{
+	font-family: helvetica;
+	color: white;
+	margin-left: 67px;
+	margin-right: 67px;
+	margin-top: 15px;
+	text-align: left;
+	padding: 0;
+}
+.abtusimg:hover{
+	box-shadow: 0 0 20px 0px rgba(255,255,255);
+}
+
+
+</style>
+</html>
